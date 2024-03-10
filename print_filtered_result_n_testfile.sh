@@ -82,7 +82,7 @@ done
 # 2. Put this script in the root of your minishell folder.
 # 3. Give it execution permission (chmod +x print_filtered_result_n_testfile.sh)
 # 4. Inside this script look for
-# "/nfs/homes/marondon/42_minishell_tester/tester.sh" and change
+# "/nfs/homes/marondon/42_minishell_tester" and change
 # marondon with your username. (the script needs the full path to
 # 42_minishell_tester/tester.sh)
 # 5. Execute it (./print_filtered_result_n_testfile.sh) and it'll automatically
@@ -96,7 +96,7 @@ done
 # Then it runs the whole test, and prints the test result
 # and the tesfile contents only of the selected "test parts"
 # E.g: Use it like this:
-# ./filter_n_print_tests_content.sh
+# ./print_filtered_result_n_testfile.sh
 # Enter the test mode (m, vm, d, ne, b):
 # m
 # Include all tested parts? (STD_OUT, STD_ERR, EXIT_CODE, LEAKS) [y/n]:
