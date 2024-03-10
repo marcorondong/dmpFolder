@@ -88,7 +88,7 @@ eval "bash /nfs/homes/marondon/42_minishell_tester/tester.sh $test_mode | sed -e
 # "bash /nfs/homes/marondon/42_minishell_tester/tester.sh" and change
 # marondon with your username. (the script needs the full path to
 # 42_minishell_tester/tester.sh)
-# 5. Execute it (./print_filtered_result.sh) and it'll automatically will run
+# 5. Execute it (./print_filtered_result.sh) and it'll automatically run
 # zstenger's minishell tester.
 #
 # It ask for:
