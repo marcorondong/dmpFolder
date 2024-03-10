@@ -82,7 +82,7 @@ done
 # 2. Put this script in the root of your minishell folder.
 # 3. Give it execution permission (chmod +x print_filtered_result_n_testfile.sh)
 # 4. Inside this script look for
-# "bash /nfs/homes/marondon/42_minishell_tester/tester.sh" and change
+# "/nfs/homes/marondon/42_minishell_tester/tester.sh" and change
 # marondon with your username. (the script needs the full path to
 # 42_minishell_tester/tester.sh)
 # 5. Execute it (./print_filtered_result_n_testfile.sh) and it'll automatically
