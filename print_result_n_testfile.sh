@@ -75,7 +75,9 @@ done
 # (this one shows whole test without filtering, but only prints file contents
 # of failed test).
 #
-# mstest is an alias for the tester script (42_minishell_tester-master/tester.sh)
+# mstest is an alias for the tester script ( $HOME/42_minishell_tester/tester.sh)
+# that is created automatically when "installing" zstenger's minishell tester:
+# bash -c "$(curl -fsSL https://raw.githubusercontent.com/zstenger93/42_minishell_tester/master/install.sh)"
 #
 ################################################################################
 #          MADE BY MARONDON WITH THE HELP OF STACK OVERFLOW AND CHATGPT        #
