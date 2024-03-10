@@ -46,6 +46,12 @@ done
 # (https://github.com/zstenger93/42_minishell_tester).
 # git clone https://github.com/zstenger93/42_minishell_tester.git
 #
+# 1. Copy zstenger's minishell tester in the root of your minishell folder.
+# (Follow his instructions; you have to give execution permission to his tester)
+# 2. Put this script in the root of your minishell folder.
+# 3. Give it execution permission (chmod +x print_testfile_lines.sh).
+# 4. Execute it (./print_testfile_lines.sh)
+#
 # It needs the path+filename of the test, and a comma-separated list of the
 # lines (line head -line_number).
 # It's like typing 'cat path_filename | head -line_number' but it's "automatic".
