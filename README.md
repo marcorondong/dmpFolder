@@ -9,6 +9,18 @@ Give the scripts execution permisions: `chmod +x name_of_the_script`
 
 Then follow their instructions. They are in the code of each script (open them in text editor).
 
+# WHAT EACH SCRIPT DOES
+*print_testfile_lines.sh* : FOR PRINTING THE TESTFILE CONTENTS
+
+
+*print_result_n_testfile.sh* : FOR PRINTING THE TEST RESULTS AND THE TESTFILE CONTENTS OF ALL THE FAILS
+
+
+*print_filtered_result.sh* : FOR PRINTING THE FILTERED TEST RESULT ACCORDING TO TEST PART (STD_OUT,ERR,ETC)
+
+
+*print_filtered_result_n_testfile.sh* : FOR PRINTING THE FILTERED TEST RESULT ACCORDING TO TEST PART (STD_OUT,ERR,ETC) AND THE TESTFILE CONTENTS.
+
 
 <h2 align=center>USEFUL COMMANDS</h2>
 
