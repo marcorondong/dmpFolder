@@ -76,9 +76,20 @@ eval "bash /nfs/homes/marondon/42_minishell_tester/tester.sh $test_mode | sed -e
 #
 #FOR PRINTING THE FILTERED TEST RESULT ACCORDING TO TEST PART (STD_OUT,ERR,ETC)#
 #
-# This is a script to be used alongside the minishell tester of zstenger93
+# This is a script to be used alongside the minishell tester of zstenger93.
 # (https://github.com/zstenger93/42_minishell_tester).
 # git clone https://github.com/zstenger93/42_minishell_tester.git
+#
+# 1. Copy zstenger's minishell tester in the root of your minishell folder.
+# (Follow his instructions; you have to give execution permission to his tester)
+# 2. Put this script in the root of your minishell folder.
+# 3. Give it execution permission (chmod +x print_filtered_result.sh).
+# 4. Inside this script look for
+# "bash /nfs/homes/marondon/42_minishell_tester/tester.sh" and change
+# marondon with your username. (the script needs the full path to
+# 42_minishell_tester/tester.sh)
+# 5. Execute it (./print_filtered_result.sh) and it'll automatically will run
+# zstenger's minishell tester.
 #
 # It ask for:
 # The test mode to use (m, vm, d, ne, b, etc) (read zstenger93 tester usage).
