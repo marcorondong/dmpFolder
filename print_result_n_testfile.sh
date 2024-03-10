@@ -50,6 +50,15 @@ done
 # (https://github.com/zstenger93/42_minishell_tester).
 # git clone https://github.com/zstenger93/42_minishell_tester.git
 #
+# 1. Copy zstenger's minishell tester in the root of your minishell folder.
+# (Follow his instructions; you have to give execution permission to his tester)
+# 2. Put this script in the root of your minishell folder.
+# 3. Give it execution permission (chmod +x print_result_n_testfile.sh).
+# 4. Inside this script look for
+# "/nfs/homes/marondon/42_minishell_tester/tester.sh" and change
+# marondon with your username. (the script needs the full path to
+# 42_minishell_tester/tester.sh)
+#
 # It needs the test result output. Either you redirect the input from a saved
 # test result file, or you pipe it.
 # Note that for filtering the test, the folloing command should be used:
