@@ -1,0 +1,73 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: marondon <marondon@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/09/08 15:05:54 by marondon          #+#    #+#             */
+/*   Updated: 2023/09/13 15:50:53 by marondon         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
+
+int	ft_atoi(const char *nptr)
+{
+	int	i;
+	int	result;
+	int	minus;
+
+	i = 0;
+	result = 0;
+	minus = 1; // Helper variable to check '-' sign
+	// Check isspaces (' ', '\n', '\t', '\v', '\f', '\r') and skip them
+	while (nptr[i] != '\0' && (nptr[i] == 32
+			|| (nptr[i] >= 9 && nptr[i] <= 13)))
+	{
+		i++;
+	}
+	// check for +/-. 'if' is because it must only be one sign
+	if (nptr[i] == '+' || nptr[i] == '-')
+	{
+		// Check for '-' to change sign of result
+		if (nptr[i] == '-')
+			minus = -minus;
+		i++;
+	}
+	// Check for numbers only and stop if find something else
+	while (nptr[i] >= '0' && nptr[i] <= '9')
+	{
+		result = result * 10 + (nptr[i] - 48);
+		i++;
+	}
+	// Multiply result with the sign
+	return (result * minus);
+}
+/*
+#include <stdio.h>
+#include <stdlib.h>
+int main(void)
+{
+	printf("%d\n", ft_atoi("42")); // Output: 42
+	printf("%d\n", ft_atoi("   -42")); // Output: -42
+	printf("%d\n", ft_atoi("4193 with words")); // Output: 4193
+	printf("%d\n", ft_atoi("words and 987")); // Output: 0
+	printf("%d\n", ft_atoi("-+42")); // Output: 0
+	printf("%d\n", ft_atoi("-91283472332")); // Output: -2147483648 (INT_MIN)
+	printf("----------------\n");
+	printf("%d\n", atoi("42")); // Output: 42
+	printf("%d\n", atoi("   -42")); // Output: -42
+	printf("%d\n", atoi("4193 with words")); // Output: 4193
+	printf("%d\n", atoi("words and 987")); // Output: 0
+	printf("%d\n", ft_atoi("-+42")); // Output: 0
+	printf("%d\n", atoi("-91283472332")); // Output: -2147483648 (INT_MIN)
+	return (0);
+}
+==============================================================================
+- I only have to handle ONE sign (+/-) before the number
+so more that one sign is considered to return '0'
+- Im not handling overflows in integer (INT_MAX nor INT_MIN)
+To do so; I have to check before multiplying *10 if result is >INT_MAX/10
+or <__INt_MIN/10
+*/

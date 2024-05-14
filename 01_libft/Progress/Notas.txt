@@ -1,0 +1,51 @@
+**Duda en ft_strlcpy o strlcat:
+Debo de colocar: while (src[i] != '\0' && i < size - 1)
+o: while (src[i] != '\0' && i < size)
+Ya que i no será mayor que size
+
+**Duda en bzero:
+- No se como comprobar que la funcion sirve porque no retorna nada;
+solo sobreescribe con '\0'. Y cuando trato de escribir usando printf
+no se imprime nada porque comienza con '\0'
+- Puede ser que tenga que escribir sólo 0 en lugar de \0 ?
+
+**Memcpy:
+Debo de validar src, dst y n (que no sean pointers NULL, y que n sea mayor a cero)
+
+**Duda en memmove:
+- No sé porq hay que copiar de atras para adelante. Entiendo que es para no sobreescribir;
+lo que no entiendo es si guardé el valor de src en tempcpy ya no me debo de preocupar por
+sobreeescribir nada ya que ese valor no se modificará si sobreescribo src
+
+**Memchr:
+Debo de validar si "n" es cero.
+
+**Duda en strncmp
+while ((s1[i] != '\0' || s2[i] != '\0') && i != n)
+debe ser || o && en la comparacion de los strings?
+
+**ft_calloc
+Debo de haer un main para probar mi callloc
+Revisarla de nuevo a ver si corre ya que modifquè el 20230911
+
+**ft_substr
+Debo de validar si len == 0 ? Puedo pasar len ==0 ? (!s || len == 0)
+si 's' existe?
+Si len es mayor que strlen(s)? Si start es mayor que strlen(s)?
+
+**ft_strjoin
+Should I vlidate if s1 or s2 exist?
+They have to be perfect strings. So Shoul I have to validate that too?
+
+**ft_split
+Debo de liberar si no todo el string se recorrio?
+
+=========================================================================
+IDEA:
+- Colocar todo el codigo con comentario y luego subir version limpia
+
+=========================================================================
+LEER:
+- Malloc protection
+- Strucs
+- operators shortened. Ex: +=
