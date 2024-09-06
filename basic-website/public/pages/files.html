@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="../css/styles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>File Management</title>
+	<style>
+		.file-list {
+			margin-top: 20px;
+		}
+		.file-item {
+			margin-bottom: 5px;
+		}
+	</style>
+	<link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<h1>File Management</h1>
+	<form id="uploadForm" enctype="multipart/form-data">
+		<label for="fileInput">Upload an image:</label>
+		<input type="file" id="fileInput" name="file" accept="image/*" required>
+		<button type="submit">Upload</button>
+	</form>
+
+	<div id="fileList" class="file-list">
+		<!-- File names will be listed here -->
+	</div>
+
+	<nav>
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="form.html">Form Test</a></li>
+			<li><a href="files.html">File Test</a></li>
+		</ul>
+	</nav>
+	<script src="../js/file_management.js"></script>
+</body>
+</html>

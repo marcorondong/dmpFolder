@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="../css/styles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form Page</title>
+	<style>
+		/* Add styles to ensure consistent spacing for the output */
+		.form-group {
+			margin-bottom: 10px;
+		}
+
+		#output {
+			min-height: 20px; /* Reserve space for messages */
+			margin-top: 20px;
+		}
+	</style>
+	<link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<h1>Form Test</h1>
+	<p>This is a simple page used for testing forms (GET/POST requests on our web server).</p>
+	<form id="mainForm">
+		<!-- Name input and associated buttons -->
+		<div class="form-group">
+			<label for="nameInput">Enter your name:</label>
+			<input type="text" id="nameInput" required>
+			<button type="button" id="greetButton">Greet</button>
+			<button type="button" id="searchButton">Search</button>
+		</div>
+		<!-- Email input and Register button -->
+		<div class="form-group">
+			<label for="emailInput">Enter your email (for Register):</label>
+			<input type="email" id="emailInput" required>
+			<button type="button" id="registerButton">Register</button>
+		</div>
+
+		<!-- Display all names button -->
+		<button type="button" id="displayButton">Display all names</button>
+	</form>
+
+	<!-- Reserved space for greeting and search results -->
+	<!-- <br><br>
+	<p id="output"></p>
+	<br><br> -->
+	<!-- Output area for greeting and search results -->
+	<p id="output"></p>
+
+	<nav>
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="form.html">Form Test</a></li>
+			<li><a href="files.html">File Test</a></li>
+		</ul>
+	</nav>
+	<script src="../js/script.js"></script>
+</body>
+</html>
