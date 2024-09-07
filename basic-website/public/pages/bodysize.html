@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="../css/styles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BodySize Page</title>
+	<style>
+		.form-group {
+	margin-bottom: 10px;
+	position: relative; /* Positioning context for the char count */
+	display: inline-block; /* Ensures the form group does not expand beyond the textarea */
+	}
+
+	#textInput {
+		width: 100%; /* Stays within the constraints of the form-group */
+		box-sizing: border-box; /* Includes padding and border in the width */
+		resize: both; /* Allows resizing but keeps within its parent */
+	}
+
+	#charCount {
+		position: absolute;
+		right: 10px; /* Keeps the char count attached to the right edge */
+		bottom: 5px;
+		font-size: 12px;
+		color: gray;
+		pointer-events: none; /* Prevents interaction that might cause misalignment */
+	}
+	</style>
+	<link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<h1>BodySize Test</h1>
+	<p>This is a simple page used for testing the client_body_size.</p>
+
+	<!-- Label moved outside the form and aligned properly -->
+	<div class="label-container">
+		<p>Enter some text:</p>
+	</div>
+
+	<form id="mainForm">
+		<div class="form-group">
+			<!-- Textarea for user input -->
+			<textarea id="textInput" rows="5" cols="40" required></textarea>
+			<!-- Character count aligned within the form group -->
+			<span id="charCount">0</span>
+			<br>
+			<!-- Button to trigger actions handled by JavaScript -->
+			<button type="button" id="sendButton">Send</button>
+		</div>
+	</form>
+
+	<nav>
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="form.html">Form Test</a></li>
+			<li><a href="files.html">File Test</a></li>
+			<li><a href="bodysize.html">Bodysize Test</a></li>
+		</ul>
+	</nav>
+
+	<!-- JavaScript will handle the interactive aspects -->
+	<!-- <script src="../js/script.js"></script> -->
+	<script src="../js/bodysize.js"></script>
+</body>
+</html>
